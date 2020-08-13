@@ -32,29 +32,29 @@
           
           <!-- input fields -->
             <form>
-                <div class="col-12 form-group">
+                <div class="col-12 input-group">
                     <label for="search">
                     </br>Search Term
-                    </br><input type="text" id="search" />
+                    </br><input size="40" type="text" id="search" />
                     </label>
                 </div>
                 
-                    <div class="col-12 form-group">
+                    <div class="col-12 input-group">
                     <label for="numberOfRecords">
                     </br>Number of Records to Retrieve
-                    </br><input type="number" id="numberOfRecords" />
+                    </br><input type="number" min="1" max="200" id="numberOfRecords" />
                     </label>
                 </div>
                   
-                <div class="col-12 form-group">
+                <div class="col-12 input-group">
                     <label for="startYear"></br>Start Year (optional)
-                    </br><input type="number" id="startYear" />
+                    </br><input type="number" min="1851" max="2020" id="startYear" />
                     </label>
                 </div>
                 
-                <div class="col-sm-12 form-group">
+                <div class="col-sm-12 input-group">
                     <label for="endYear"></br>End Year (optional)
-                    </br><input type="number" id="endYear"></input>
+                    </br><input type="number" min="1851" max="2020" id="endYear"></input>
                     </label>
                 </div>
             </form>
@@ -62,10 +62,11 @@
 
           <!-- search button / clear results button -->
           <div class="row d-flex justify-content-center">
+              <!-- search emoji and text -->
               <div class="col-2 searchButton">
                 <img width="30px" alt="magnifying glass emoji" src="assets/magnifier.png"/>search
               </div>
-
+              <!-- clear emoji and text -->
               <div class="col-2 clearButton">
                 <img width="30px" alt="trash bin emoji" src="assets/bin.png"/>clear results
               </div>
@@ -73,15 +74,16 @@
           
 
             <div class="row d-flex justify-content-center articlesHolder">
-                
-              
+
               <div class="col-12">
                 <h4><img width="30px" alt="newspaper emoji" src="assets/newspaper.png"/> Top Articles</h4>
               </div>
-              
-              <div class="col-12 topArticles">
-                insert articles here
+              <!-- search results will appear below -->
+              <div class="col-12 topArticles m-4">
+               add articles here
+
                 <!-- add articles here -->
+
               </div>
             </div>
       </div>

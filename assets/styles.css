@@ -34,13 +34,13 @@ input {
     background-color: #F8F8F6;  
 }
 
-.input-group {
-    margin: 10px;
-}
-
-.form-group {
-    width: 100%;
-}
 .searchButton:hover, .clearButton:hover {
     filter: drop-shadow(8px 10px 8px gray);
+}
+
+.topArticles {
+   background-color: #F8F8F6;
+   border-radius: 8px; 
+   padding: 8px;
+   margin: 10px;
 }

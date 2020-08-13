@@ -1,4 +1,4 @@
-// author: Bermond, Lindsey
+// authors: Bermond, Lindsey
 // Constant values for the NYT API. Set up as const to avoid misspellings in the future
 const nytURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
 const apiKey = '8fmnuqCO1OZMG1AntdaaGGBE5Agaw2Jn';
