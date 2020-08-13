@@ -1,0 +1,46 @@
+body {
+    background-color: #EBEBDA;
+    color: #3F3F2F;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90%;
+}
+
+nav {
+    background-color: #3F3F2F;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #929275;
+    text-align: center;
+}
+
+h4{
+   text-align: center;
+   border-bottom: 1px dotted;
+}
+
+.searchHere, .articlesHolder {
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+input {
+    border: 0px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #F8F8F6;  
+}
+
+.input-group {
+    margin: 10px;
+}
+
+.form-group {
+    width: 100%;
+}
+.searchButton:hover, .clearButton:hover {
+    filter: drop-shadow(8px 10px 8px gray);
+}

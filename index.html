@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <!--  style sheet -->
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+
+    <nav class="p-3 align-middle">
+        <h1>New York Times Search</h1>
+    </nav>
+
+      <div class="container">
+
+        <div class="row searchHere">
+          <div class="col-12 parameters">
+            <h4>Search Parameters</h4>
+          </div>
+          
+          <!-- input fields -->
+            <form>
+                <div class="col-12 form-group">
+                    <label for="search">
+                    </br>Search Term
+                    </br><input type="text" id="search" />
+                    </label>
+                </div>
+                
+                    <div class="col-12 form-group">
+                    <label for="numberOfRecords">
+                    </br>Number of Records to Retrieve
+                    </br><input type="number" id="numberOfRecords" />
+                    </label>
+                </div>
+                  
+                <div class="col-12 form-group">
+                    <label for="startYear"></br>Start Year (optional)
+                    </br><input type="number" id="startYear" />
+                    </label>
+                </div>
+                
+                <div class="col-sm-12 form-group">
+                    <label for="endYear"></br>End Year (optional)
+                    </br><input type="number" id="endYear"></input>
+                    </label>
+                </div>
+            </form>
+          </div>
+
+          <!-- search button / clear results button -->
+          <div class="row d-flex justify-content-center">
+              <div class="col-2 searchButton">
+                <img width="30px" alt="magnifying glass emoji" src="assets/magnifier.png"/>search
+              </div>
+
+              <div class="col-2 clearButton">
+                <img width="30px" alt="trash bin emoji" src="assets/bin.png"/>clear results
+              </div>
+            </div>
+          
+
+            <div class="row d-flex justify-content-center articlesHolder">
+                
+              
+              <div class="col-12">
+                <h4><img width="30px" alt="newspaper emoji" src="assets/newspaper.png"/> Top Articles</h4>
+              </div>
+              
+              <div class="col-12 topArticles">
+                insert articles here
+                <!-- add articles here -->
+              </div>
+            </div>
+      </div>
+
+
+      
+ 
+ 
+
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/scripts.js"></script>
+
+</body>
+</html>
