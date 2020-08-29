@@ -8,6 +8,9 @@ body {
     width: 90%;
 }
 
+p {
+    line-height: 1;
+}
 nav {
     background-color: #3F3F2F;
     font-family: 'Rubik Mono One', sans-serif;
@@ -34,13 +37,18 @@ input {
     background-color: #F8F8F6;  
 }
 
-.searchButton:hover, .clearButton:hover {
-    filter: drop-shadow(8px 10px 8px gray);
+.emojis {
+    height: 30px;
 }
 
-.topArticles {
-   background-color: #F8F8F6;
-   border-radius: 8px; 
-   padding: 8px;
-   margin: 10px;
+.searchButton:hover, .clearButton:hover, .previousButton:hover, .nextButton:hover {
+    filter: drop-shadow(8px 10px 8px gray);
+    cursor: pointer;
+}
+
+.article {
+    border-radius: 8px; 
+    background-color: #F8F8F6;
+    padding: 10px;
+    margin-bottom: 20px;
 }

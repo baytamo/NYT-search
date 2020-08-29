@@ -3,102 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>New York Times Search</title>
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!--  style sheet -->
-    <link rel="stylesheet" href="assets/styles.css">
-
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
 
   <body>
-
-    <nav class="p-3 align-middle">
-        <h1>New York Times Search</h1>
+    <nav class="p-3 sticky-top align-middle">
+      <h1>New York Times Search</h1>
     </nav>
 
-      <div class="container">
+    <div class="container">
+      <div class="row searchHere">
+        <div class="col-12 parameters">
+          <h4>Search Parameters</h4>
+        </div>
 
-        <div class="row searchHere">
-          <div class="col-12 parameters">
-            <h4>Search Parameters</h4>
-          </div>
-          
-          <!-- input fields -->
-            <form>
-                <div class="col-12 input-group">
-                    <label for="search">
-                    </br>Search Term
-                    </br><input size="40" type="text" id="search" />
-                    </label>
-                </div>
-                
-                    <div class="col-12 input-group">
-                    <label for="numberOfRecords">
-                    </br>Number of Records to Retrieve
-                    </br><input type="number" min="1" max="200" id="numberOfRecords" />
-                    </label>
-                </div>
-                  
-                <div class="col-12 input-group">
-                    <label for="startYear"></br>Start Year (optional)
-                    </br><input type="number" min="1851" max="2020" id="startYear" />
-                    </label>
-                </div>
-                
-                <div class="col-sm-12 input-group">
-                    <label for="endYear"></br>End Year (optional)
-                    </br><input type="number" min="1851" max="2020" id="endYear"></input>
-                    </label>
-                </div>
-            </form>
+        <!-- input fields -->
+        <form>
+          <div class="col-12">
+            <label for="search"
+              >Search Term</label>
+              <p>
+                <input size="36" type="text" id="search" />
+              </p>
           </div>
 
-          <!-- search button / clear results button -->
-          <div class="row d-flex justify-content-center">
-              <!-- search emoji and text -->
-              <div class="col-2 searchButton">
-                <img width="30px" alt="magnifying glass emoji" src="assets/magnifier.png"/>search
-              </div>
-              <!-- clear emoji and text -->
-              <div class="col-2 clearButton">
-                <img width="30px" alt="trash bin emoji" src="assets/bin.png"/>clear results
-              </div>
-            </div>
-          
+          <div class="col-12">
+            <label for="numberOfRecords">
+              Number of Records to Retrieve (max: 10)</label>
+              <p>
+                <input type="number" min="1" max="10" id="numberOfRecords" />
+              </p>
+              <p>
+                <span id="numberAlert"></span>
+              </p>
+          </div>
 
-            <div class="row d-flex justify-content-center articlesHolder">
+          <div class="col-12">
+            <label for="startYear"
+              >Start Year (optional) </label>
+              <p>
+                <input type="number" min="1851" max="2020" id="startYear" />
+              </p>
+          </div>
 
-              <div class="col-12">
-                <h4><img width="30px" alt="newspaper emoji" src="assets/newspaper.png"/> Top Articles</h4>
-              </div>
-              <!-- search results will appear below -->
-              <div class="col-12 topArticles m-4">
-               add articles here
-
-                <!-- add articles here -->
-
-              </div>
-            </div>
+          <div class="col-12">
+            <label for="endYear"
+              >End Year (optional)</label>
+              <p>
+                <input type="number" min="1851" max="2020" id="endYear" />
+              </p>
+              <p>
+                <span id="yearAlert"></span>
+              </p>
+          </div>
+        </form>
+        
+        <!-- this tag below closes .searchHere row -->
       </div>
 
+      <!-- search button / clear results button -->
+      <div class="row d-flex justify-content-center">
+        <!-- search emoji and text -->
+        <div class="col-2 searchButton">
+          <img class="emojis"
+            alt="magnifying glass emoji"
+            src="assets/magnifier.png"
+          />search
+        </div>
+        <!-- clear emoji and text -->
+        <div class="col-2 clearButton">
+          <img class="emojis" alt="trash bin emoji" src="assets/bin.png" />clear
+          results
+        </div>
+      </div>
 
-      
- 
- 
+      <div class="row d-flex justify-content-center articlesHolder">
+        <div class="col-12">
+          <h4>
+            <img
+             class="emojis"
+              alt="newspaper emoji"
+              src="assets/newspaper.png"
+            />
+            Top Articles
+          </h4>
+        </div>
+        <!-- search results will appear below -->
+        <div class="col-12 topArticles m-4">
+          <!-- add articles here -->
+        </div>
+      </div>
+    </div>
 
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"
-  ></script>
-  <script src="assets/scripts.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="assets/scripts.js"></script>
+  </body>
 </html>
